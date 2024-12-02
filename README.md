@@ -74,6 +74,8 @@ From the table, we see that at a time-ahead interval of 1 hour ahead FW of 4, th
 | 96  | 0.515 | 0.477 | 0.464 | 0.491 |
 | 192 | 0.475 | 0.507 | 0.467 | 0.493 |
 | 288 | 0.463 | 0.487 | 0.484 | 0.493 |
+
+
 The table shows the base performance results of the four ensemble models, excluding GNN. From the observed results, it is evident that these machine learning models perform poorly, with very low AUC scores approaching 0.5, which is the AUC of a random classifier. Among these models, the SVM performs the worst, with the average AUC score of 0.371. The best performers among the four models are RF and DT, with average AUCs over all nine future windows (FW) of 0.516 and 0.511 respectively. These results highlight the complexity of predicting anomalies in HPC environments.
 
 ### Performance using ensemble strategies
