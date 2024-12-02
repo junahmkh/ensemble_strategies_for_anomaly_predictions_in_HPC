@@ -33,6 +33,17 @@ One popular way to aggregate predictions in an ensemble is through voting strate
 ### Ensemble models
 In this project, we consider an ensemble of five different models: GNN models, Random Forest (RF), Decision Tree (DT), Support Vector Machines (SVM), and Logistic Regression (LR). Since the GNN models are already trained, our first step will be to train the remaining four models. Each model will be trained on a per-node basis, using an 80:20 split for training and testing (consistent with the GNN training), with a separate model for each compute node in the HPC facility.
 
+FW	Hard voting	Hard-GNN	Soft voting	Soft-GNN
+4	0.743	-0.159	0.932	0.03
+6	0.767	-0.113	0.907	0.027
+12	0.753	-0.125	0.889	0.011
+24	0.702	-0.048	0.817	0.067
+32	0.679	-0.117	0.789	-0.007
+64	0.618	-0.139	0.704	-0.053
+96	0.593	-0.106	0.653	-0.046
+192	0.540	-0.09	0.604	-0.026
+288	0.542	-0.002	0.566	0.022
+
 ## References
 [1]  Andrea Borghesi, Andrea Bartolini, Michele Lombardi, Michela Milano, Luca Benini, A semisupervised autoencoder-based approach for anomaly detection in high performance computing systems, Engineering Applications of Artificial Intelligence, Volume 85, 2019, Pages 634-644, ISSN 0952-1976, https://doi.org/10.1016/j.engappai.2019.07.008.
 
