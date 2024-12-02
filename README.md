@@ -32,3 +32,12 @@ One popular way to aggregate predictions in an ensemble is through voting strate
 
 ### Ensemble models
 In this project, we consider an ensemble of five different models: GNN models, Random Forest (RF), Decision Tree (DT), Support Vector Machines (SVM), and Logistic Regression (LR). Since the GNN models are already trained, our first step will be to train the remaining four models. Each model will be trained on a per-node basis, using an 80:20 split for training and testing (consistent with the GNN training), with a separate model for each compute node in the HPC facility.
+
+## References
+[1]  Andrea Borghesi, Andrea Bartolini, Michele Lombardi, Michela Milano, Luca Benini, A semisupervised autoencoder-based approach for anomaly detection in high performance computing systems, Engineering Applications of Artificial Intelligence, Volume 85, 2019, Pages 634-644, ISSN 0952-1976, https://doi.org/10.1016/j.engappai.2019.07.008.
+
+[2] Martin Molan, Andrea Borghesi, Daniele Cesarini, Luca Benini, Andrea Bartolini, RUAD: Unsupervised anomaly detection in HPC systems, Future Generation Computer Systems, Volume 141, 2023, Pages 542-554, ISSN 0167-739X, https://doi.org/10.1016/j.future.2022.12.001.
+
+[3] Martin Molan, Mohsen Seyedkazemi Ardebili, Junaid Ahmed Khan, Francesco Beneventi, Daniele Cesarini, Andrea Borghesi, Andrea Bartolini, GRAAFE: GRaph Anomaly Anticipation Framework for Exascale HPC systems, Future Generation Computer Systems, Volume 160, 2024, Pages 644-653, ISSN 0167-739X, https://doi.org/10.1016/j.future.2024.06.032.
+
+[4] Borghesi, A., Di Santi, C., Molan, M. et al. M100 ExaData: a data collection campaign on the CINECA’s Marconi100 Tier-0 supercomputer. Sci Data 10, 288 (2023). https://doi.org/10.1038/s41597-023-02174-3
