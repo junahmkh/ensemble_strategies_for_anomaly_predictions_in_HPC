@@ -29,8 +29,8 @@ An ensemble of models combines predictions from multiple individual models to im
 
 One popular way to aggregate predictions in an ensemble is through voting strategies, which come in two main forms: soft voting and hard voting.
 
-•	Hard voting: Each model in the ensemble casts a "vote" for a specific class label based on its prediction. The class with the majority votes across all models is chosen as the final prediction. 
-•	Soft voting: Each model in the ensemble outputs its prediction as a probability, specifically for class 1 (anomaly) in our case. The final predicted probability is calculated as the average of these probabilities. This approach leverages the confidence levels of individual models, providing a more nuanced prediction compared to hard voting.
+- Hard voting: Each model in the ensemble casts a "vote" for a specific class label based on its prediction. The class with the majority votes across all models is chosen as the final prediction.
+- Soft voting: Each model in the ensemble outputs its prediction as a probability, specifically for class 1 (anomaly) in our case. The final predicted probability is calculated as the average of these probabilities. This approach leverages the confidence levels of individual models, providing a more nuanced prediction compared to hard voting.
 
 ### Ensemble models
 In this project, we consider an ensemble of five different models: GNN models, Random Forest (RF), Decision Tree (DT), Support Vector Machines (SVM), and Logistic Regression (LR). Since the GNN models are already trained, our first step will be to train the remaining four models. Each model will be trained on a per-node basis, using an 80:20 split for training and testing (consistent with the GNN training), with a separate model for each compute node in the HPC facility.
