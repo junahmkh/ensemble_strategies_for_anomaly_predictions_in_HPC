@@ -22,7 +22,7 @@ The GCN models are trained as per-rack models, meaning each rack in the data cen
 
 The trained model consisted of a line graph where each compute node was connected to the node above and below. The structure of the rack-level model is depicted in following figure.
 
-![image](gcn_schema.pdf)
+![image](gcn_schema.png)
 
 ### Ensemble strategies
 An ensemble of models combines predictions from multiple individual models to improve overall performance. The primary goal is to leverage the strengths of different models, reducing the likelihood of errors and increasing the robustness and accuracy of predictions. Ensembles are particularly effective when individual models are diverse, meaning they make different kinds of errors. There are several techniques to create ensembles, including bagging, boosting, and stacking, each with its unique methodology for combining models.
